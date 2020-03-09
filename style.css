@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Sen', Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  position: absolute;
+  z-index: 99;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: 126px;
+  cursor: pointer;
+}
+
+.burger-menu {
+  width: 30px;
+  cursor: pointer;
+}
+
+.main {
+  height: auto;
+  min-height: 100vh;
+  background-image: url('images/fondo-movil.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.menu {
+  height: auto;
+  min-height: 100vh;
+  background-image: url('images/Plantilla-menu.png');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  display: none;
+}
+
+.open {
+  display: inline;
+}
+
+.menu-child {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(128,128,128, 0.5);
+}
+
+.menu-ul {
+  height: 100vh;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+.menu-ul li {
+  color: #ea8918;
+}
+
+.cartel {
+  width: 100vw;
+  margin-top: 70px;
+}
+
+.cartel-parent {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images/Plantilla_Hojas_fondo.png');
+  background-size: cover;
+}
+
+.faqs {
+  width: 100vw;
+  height: auto;
+  background-image: url('images/Plantilla_Hojas_fondo.png');
+  background-size: contain;
+  padding: 0 16px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.faqs h1, .faqs h2 {
+  color: #01df4b;
+}
+
+.faqs h1 {
+  font-size: 60px;
+}
+
+.faqs h2 {
+  font-size: 26px;
+}
+
+.faqs p {
+  color: white;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.boton-compra {
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(#6fd800, #233214)  ;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main .boton-compra {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+}
+
+.menu .boton-compra {
+  margin-top: 20px;
+}
+
+.comprar {
+  padding-top: 100px;
+}
+
+.nav-buttons {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .main {
+    height: auto;
+    min-height: 100vh;
+    background-image: url('images/fondo_web.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .main .boton-compra {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+  }
+
+  .comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .burger-menu{
+    display: none;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .nav-bar {
+    height: 115px;
+  }
+
+  .nav-buttons li {
+    color: #ea8918;
+  }
+}
